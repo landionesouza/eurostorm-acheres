@@ -182,6 +182,8 @@
       padding: 8px 14px; border-radius: 999px; font-size: 14px; margin-bottom: 16px;
     }
     .offer-badge .amount { color: #fff; }
+    .offer-badge--pulse { animation: offerBadgePulse 2.4s ease-in-out infinite; }
+    @keyframes offerBadgePulse { 0%,100%{ box-shadow: 0 0 0 0 rgba(167,219,95,.35); } 50%{ box-shadow: 0 0 0 6px rgba(167,219,95,0); } }
 
     /* Rareté / places limitées */
     .scarcity {
@@ -435,14 +437,14 @@
       <div class="container hero__inner">
         <p class="eyebrow eyebrow--light">Orages de grêle · Achères · Poissy · Conflans (78)</p>
 
-        <span class="offer-badge"><span aria-hidden="true">🎁</span> Jusqu'à <span class="amount">250€ offerts</span> sur votre franchise</span>
+        <span class="offer-badge offer-badge--pulse"><span aria-hidden="true">🎁</span> Offre à durée limitée</span>
 
         <h1 id="hero-title" class="hero__title">
-          Votre voiture grêlée ? <span class="hl">On répare.</span> Sans peinture. Pris en charge par votre assurance.
+          Votre voiture grêlée ? <span class="hl">On répare</span> sans peinture — et jusqu'à <span class="hl">250€ offerts</span> sur votre franchise.
         </h1>
 
         <p class="hero__sub">
-          Atelier partenaire à Achères (Garage Tilbury). Débosselage sans peinture, prise en charge par votre assurance et <strong>jusqu'à 250€ offerts sur votre franchise</strong> — pour toute réservation avant la fin de l'offre.
+          Atelier partenaire à Achères (Garage Tilbury). Débosselage sans peinture, <strong>prise en charge par votre assurance</strong>, diagnostic gratuit — et nous vous offrons <strong>jusqu'à 250€ sur votre franchise</strong> pour toute réservation avant la fin de l'offre.
         </p>
 
         <div class="hero__ctas">
